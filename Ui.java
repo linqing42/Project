@@ -6,12 +6,12 @@ import java.util.Scanner;
  * Ui class that will be responsible for interacting with the user.
  */
 public class Ui {
-    Scanner in = new Scanner(System.in);
+    public Scanner in = new Scanner(System.in);
 
     public Ui() {
     }
 
-    private String getInput() {
+    public String getInput() {
         return in.nextLine();
     }
 
