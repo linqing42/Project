@@ -8,9 +8,9 @@ package linqing.tojava;
  * @see linqing.tojava.ToDo
  */
 public class Deadline extends ToDo {
-    String by;
+    public String by;
 
-    Deadline(String description) {
+    public Deadline(String description) {
         super(description.split("/by")[ 0 ]);
         setDeadline(description.split("/by")[ 1 ]);
         saveTask(2, "do by:" + by);
